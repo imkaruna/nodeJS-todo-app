@@ -1,0 +1,22 @@
+{
+  "name": "node-todo-app",
+  "version": "1.0.0",
+  "description": "A simple Todo list using NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imkaruna/nodeJS-todo-app.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Karuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imkaruna/nodeJS-todo-app/issues"
+  },
+  "homepage": "https://github.com/imkaruna/nodeJS-todo-app#readme"
+}
