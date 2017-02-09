@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+body{
+  color: #555555;
+  background-color: #F7DC6F;
+  font-family: 'Raleway', sans-serif;
+}
+
+#todo {
+  margin: 10% 25%;
+  padding: 2%;
+  border: 2px solid white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  text-shadow: 1px 1px #eeeeee;
+
+}
+p  {
+  text-align: center;
+}
+
+ input{
+  width: 70%;
+  min-height: 40px;
+  border-radius: 5px;
+  line-height: 38px;
+  margin: 10px 0;
+  font-size: 20px;
+  padding: 5px;
+}
+
+button {
+  color: white;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #85C1E9;
+  width: 10%;
+  padding: 0 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
