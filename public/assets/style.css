@@ -7,7 +7,7 @@ body{
 }
 
 #todo {
-  margin: 10% 25%;
+  margin: 10% 15%;
   padding: 2%;
   border: 2px solid white;
   border-radius: 20px;
@@ -42,4 +42,13 @@ button {
   padding: 0 15px;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+ul.todo-list {
+  list-style: none;
+  line-height: 38px;
+}
+
+ul.todo-list li:hover{
+  text-decoration: line-through;
 }
