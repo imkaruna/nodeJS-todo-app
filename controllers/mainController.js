@@ -1,10 +1,19 @@
+var bodyParser = require('body-parser');
+
+var data = [{item: "Buy milk"},{item: "Attend event"},{item: "Pay bill"}]
+var urlEncodedData =  bodyParser.urlencoded({ extended: false });
+
 module.exports = function (app) {
+
   app.get('/', function (req, res) {
     console.log(req.url);
-    res.render('index');
+    res.render('index', {todos: data});
   });
 
-  app.post('/', function (req, res) {
+  app.post('/', urlEncodedData, function (req, res) {
+    data.push(req.body);
+    console.log('posted');
+    res.json(data);
 
   });
 
