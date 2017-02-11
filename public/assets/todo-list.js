@@ -12,7 +12,22 @@ $(document).ready(function () {
         location.reload();
       }
     });
+
     // $('.todo-list').append('<li>'+todo.item+'</li>');
     return false;
   });
+
+
+      $('li').on('click', function () {
+        console.log('li');
+        var item = $(this).text().replace(/ /g, "-");
+        $.ajax({
+          type: 'DELETE',
+          url: '/'+ item,
+          success: function (data) {
+            console.log(data);
+            location.reload();
+          }
+        });
+      });
 });

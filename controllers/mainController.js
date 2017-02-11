@@ -17,7 +17,11 @@ module.exports = function (app) {
 
   });
 
-  app.delete('/', function () {
-
+  app.delete('/:item', function (req, res) {
+    console.log('delete');
+    data = data.filter(function (todo) {
+      return todo.item.replace(/ /g, "-") !== req.params.item;
+    });
+    res.json(data);
   });
 };
